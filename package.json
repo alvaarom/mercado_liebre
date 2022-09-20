@@ -1,0 +1,24 @@
+{
+  "name": "mercado_liebre",
+  "version": "1.0.0",
+  "description": "eCommerce creado para el curso \"Developer Full Stack\" de Digital House.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alvaarom/mercado_liebre.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alvaarom/mercado_liebre/issues"
+  },
+  "homepage": "https://github.com/alvaarom/mercado_liebre#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "path": "^0.12.7"
+  }
+}
