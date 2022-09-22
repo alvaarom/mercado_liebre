@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  background-color: #EAC926;
+}
+
+.comprar {
+  text-align: center;
+}
+
+.search-bar{
+  padding: 0 0 0 20px;
+}
+
+
+p {
+  font-size: 12px;
+}
+
+p.precios {
+  font-size: 18px;
+}
+
+p.desc {
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+ul{
+  padding: 0;
+  list-style: none;
+}
+
+.burger-menu {
+  text-align: center;
+  
+}
+
+.burger-menu i {
+  background-color: #03264C;
+  font-size: 24px;
+  border-radius: 10px;
+  padding: 16px;
+  margin: 16px;
+  color: #ebebeb;
+}
+
+footer {
+  text-align: center;
+}
+
+footer i {
+  font-size: 2em;
+}
+
+footer h3 {
+  padding: 0;
+}
+
+footer p {
+  padding: 0 0 30px 0;
+}
