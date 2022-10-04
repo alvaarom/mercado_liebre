@@ -1,41 +1,44 @@
-body {
-  margin: 0;
-  font-family: 'Roboto', sans-serif;
+/* Paleta de colores
+** Amarillo: #EAC926;
+** Azul: #03264C;
+** Celeste: #1259c3;
+** Gris oscuro: #666;
+** Gris claro: #ebebeb;
+** Verde: #39b54a; */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #ebebeb;
+}
+
+/* Header */
 header {
+  padding: 20px;
   background-color: #EAC926;
+}
+
+.search-bar{
+  background-color: #ebebeb;
+  border: 1px solid #666;
+  color: #666;
+  padding: 5px;
 }
 
 .comprar {
   text-align: center;
 }
 
-.search-bar{
-  padding: 0 0 0 20px;
+.navbar {
+  display: none;
 }
 
-
-p {
-  font-size: 12px;
-}
-
-p.precios {
-  font-size: 18px;
-}
-
-p.desc {
-  font-size: 16px;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-  font-size: 12px;
-}
-
-h2 {
-  font-size: 24px;
+.login-bar {
+  display: none;
 }
 
 ul{
@@ -45,7 +48,6 @@ ul{
 
 .burger-menu {
   text-align: center;
-  
 }
 
 .burger-menu i {
@@ -53,22 +55,130 @@ ul{
   font-size: 24px;
   border-radius: 10px;
   padding: 16px;
-  margin: 16px;
   color: #ebebeb;
 }
+
+/* Main */
+main {
+  margin: auto;
+  width: 90%;
+}
+
+main section article {
+  background-color: white;
+  margin-bottom: 10px;
+  border: 1px solid #ebebeb;
+}
+
+main section article div {
+  display: flex;
+  border-top:solid 1px #ebebeb;
+  padding: 15px;
+  align-items: baseline;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+main section article i{
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #39b54a;
+  background-color: #FFF;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: -15px;
+  }
+
+h2 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 12px;
+}
+
+p.precios {
+  width: 30%;
+  font-size: 18px;
+}
+
+p.descuento {
+  width: 70%;
+  font-size: 16px;
+  color: #39b54a;
+}
+
+p.descripcion {
+  font-size: 16px;
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
+}
+
+/* Footer */
 
 footer {
   text-align: center;
 }
 
 footer i {
+  color: #03264C;
   font-size: 2em;
+  margin-bottom: 10px;
 }
 
-footer h3 {
-  padding: 0;
+/* Tablet */
+@media (min-width: 361px) {
+  main section article {
+    width: 50%;
+  }
+  
+  p.descripcion {
+    display: block;
+  }
+
+  .navbar {
+    display: block;
+  }
+  
+  .login-bar {
+    display: block;
+  }
+
+  .burger-menu {
+    display: none;
+  }
+
 }
 
-footer p {
-  padding: 0 0 30px 0;
+/* Desktop */
+@media (min-width: 769px) {
+  main section article {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    width: 25%;
+  }
+  
+  p.descripcion {
+    display: block;
+  }
+
+  .navbar {
+    display: block;
+  }
+  
+  .login-bar {
+    display: block;
+  }
+
+  .burger-menu {
+    display: none;
+  }
 }

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MercadoLiebre - Registro</title>
+</head>
+<body>
+  <form action="/register" method="post">
+    <label for="nombre">Nombre y Apellido</label>
+    <input type="text" name="nombre" id="nombre">
+
+    <label for="usuario">Usuario</label>
+    <input type="text" name="usuario" id="usuario">
+
+    <label for="nacimiento">Fecha de nacimiento</label>
+    <input type="date" name="nacimiento" id="nacimiento">
+
+    <label for="domicilio">Domicilio</label>
+    <input type="text" name="domicilio" id="domicilio">
+
+    <label for="perfil">Perfil de usuario</label>
+    <select name="perfil" id="perfil">
+      <option value="comprar">Comprar</option>
+      <option value="vender">Vender</option>
+    </select>
+
+    <label for="interes">Categorías de interés</label>
+    <select name="interes" multiple id="interes">
+      <option value="Electro">Electro</option>
+      <option value="Moda">Moda</option>
+      <option value="Hogar">Hogar</option>
+      <option value="Juguetería">Juguetería</option>
+      <option value="Vida sana">Vida sana</option>
+    </select>
+  </form>
+</body>
+</html>
