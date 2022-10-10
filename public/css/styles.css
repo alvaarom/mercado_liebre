@@ -18,43 +18,79 @@ body {
 
 /* Header */
 header {
+  display: flex;
+  flex-wrap: wrap;
   padding: 20px;
   background-color: #EAC926;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 50%;
 }
 
 .search-bar{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   background-color: #ebebeb;
-  border: 1px solid #666;
-  color: #666;
+  border-radius: 20px;
+  height: 30px;
+  position: relative;
+  width: 50%;
+}
+
+.search-bar input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: none;
   padding: 5px;
+  border-radius: 20px;
+  background-color: transparent;
+}
+
+.search-bar i {
+  width: 10%;
 }
 
 .comprar {
   text-align: center;
+  width: 100%;
 }
 
 .navbar {
   display: none;
+  width: 100%;
 }
 
 .login-bar {
   display: none;
+  width: 100%;
 }
 
 ul{
   padding: 0;
   list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+ul li {
+  padding: 5px;
 }
 
 .burger-menu {
   text-align: center;
+  width: 100%;
 }
 
 .burger-menu i {
   background-color: #03264C;
-  font-size: 24px;
+  font-size: 16px;
   border-radius: 10px;
-  padding: 16px;
+  padding: 12px;
   color: #ebebeb;
 }
 
@@ -62,6 +98,12 @@ ul{
 main {
   margin: auto;
   width: 90%;
+}
+
+main section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 main section article {
@@ -93,8 +135,15 @@ main section article i{
   top: -15px;
   }
 
+h1 {
+  width: 100%;
+}
+
 h2 {
   font-size: 24px;
+  line-height: 32px;
+  padding: 10px;
+  width: 100%;
 }
 
 p {
@@ -123,13 +172,63 @@ a {
   font-size: 12px;
 }
 
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 25px;
+  width: 90%;
+}
+
+form input {
+  margin: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  width: 90%;
+}
+
+form h1 {
+  text-align: center;
+}
+
+form div {
+  text-align: center;
+}
+
+form button {
+  border-radius: 20px;
+  border: none;
+  padding: 10px;
+  background-color: #1259c3;
+  color: #ebebeb;
+}
+
+form div button {
+  width: 45%;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 20px;
+  background-color: #1259c3;
+  color: #ebebeb;
+}
+
 /* Footer */
 
 footer {
   text-align: center;
+  display: flex;
+  justify-content: space-around;
+  
+  flex-wrap: wrap;
 }
 
-footer i {
+footer article {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+footer article i {
   color: #03264C;
   font-size: 2em;
   margin-bottom: 10px;
@@ -138,7 +237,7 @@ footer i {
 /* Tablet */
 @media (min-width: 361px) {
   main section article {
-    width: 50%;
+    width: 49%;
   }
   
   p.descripcion {
@@ -147,14 +246,31 @@ footer i {
 
   .navbar {
     display: block;
+    justify-content: space-around;
+    align-items: center;
   }
   
   .login-bar {
     display: block;
+    justify-content: space-around;
+    align-items: center;
   }
 
   .burger-menu {
     display: none;
+  }
+
+  .logo {
+    width: 33%;
+  }
+  
+  .search-bar{
+    width: 33%;
+    font-size: 12px;
+  }
+  
+  .comprar {
+    width: 33%;
   }
 
 }
@@ -163,7 +279,7 @@ footer i {
 @media (min-width: 769px) {
   main section article {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    width: 25%;
+    width: 24%;
   }
   
   p.descripcion {
@@ -172,13 +288,27 @@ footer i {
 
   .navbar {
     display: block;
+    width: 50%;
   }
   
   .login-bar {
     display: block;
+    width: 50%;
   }
 
   .burger-menu {
     display: none;
   }
+
+  footer article {
+    width: 33%;
+    margin-bottom: 10px;
+  }
+}
+
+/* Errores */
+.error {
+  color: red;
+  text-align: center;
+  margin-bottom: 10px;
 }
