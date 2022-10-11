@@ -258,6 +258,11 @@ footer article i {
   color: #03264C;
   font-size: 2em;
   margin-bottom: 10px;
+  transition: all 450ms;
+}
+
+footer article i:hover {
+  color: #EAC926;
 }
 
 /* Tablet */
