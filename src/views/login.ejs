@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+    <!-- Include Head -->
+<%- include('partials/head', {title: 'Formulario de creación'}) %>
+<body>
+	<!-- Header -->
+	<%- include('partials/headerNavbar') %>
+	<!-- /Header -->
+        
+        <main>
+            <div class="banner"></div>
+  
+            <section class="contLogin">
+                <form class="login" action="login.html" method="POST">
+                    <input class="inptLogin" type="text" name="usuario" placeholder="Nombre de usuario">
+                    <br>
+                    <input class="inptLogin" type="password" name="contraseña" placeholder="Contraseña" minlength="8">
+                    <br>
+                    <button class="btnLogin" type="submit" value="Enviar">Log In</button>
+
+                </form>
+
+            </section>
+
+        </main>
+
+        <%- include("./partials/footer") %>
+        <%- include("./partials/scripts") %>
+
+    </body>
+
+</html>    

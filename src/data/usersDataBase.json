@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "nombre": "aaaaaaaaaa",
+    "apellido": "aaaaaaaaaa",
+    "usuario": "aaaaaaaaaaaaaa",
+    "email": "aaaaaaaaaaaaa@gmail.com",
+    "contraseña": 12345678,
+    "calle": "aaaaaaaaaaaaaaaaaa",
+    "nroCalle": "1111111111111111111",
+    "provincia": "Capital Federal",
+    "codPostal": 111111111111,
+    "nacimiento": "01-01-2000",
+    "perfil": "vendedor",
+    "interes": "fitness",
+    "image": "1626146192945.png"
+  },
+  {
+    "id": 2,
+    "nombre": "aaaaaaaaaaa",
+    "apellido": "aaaaaaaaaaaaaaa",
+    "usuario": "aaaaaaaaaaaaaaa",
+    "contraseña": "12345678",
+    "calle": "aaaaaaaaaaaaaaaaaaaaaaaaa",
+    "nroCalle": "aaaaaaaaaaaaaaaaaaaaaaaa",
+    "provincia": "1",
+    "interes": "Electro",
+    "image": "1626146192945.png"
+  }
+]

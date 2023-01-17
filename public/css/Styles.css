@@ -1,0 +1,411 @@
+.registro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+    max-width: 100%;
+    max-height: 100%;
+    width: 80vw;
+}
+
+
+.inptRegister{
+    box-sizing: content-box;
+    height: 40px;
+    width: 390px;
+    max-width: 100%;
+    max-height: 100%;
+    border: none;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+    margin-top: 20px;
+}
+
+.gral:focus{
+    outline: none!important;
+    box-shadow: #EAC926 0px 0px 0px 3px!important;
+}
+
+.direccion{
+    box-sizing: content-box;
+    height: 40px;
+    width: 390px;
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.inptDirecc{
+    box-sizing: content-box;
+    height: 40px;
+    width: 70vw;
+    max-width: 100%;
+    max-height: 100%;
+    border: none;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.inptNum{
+    box-sizing: content-box;
+    height: 40px;
+    width: 30vw;
+    max-width: 100%;
+    max-height: 100%;
+    border: none;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+    margin-top: 20px;
+}
+
+.inptFecha{
+    box-sizing: content-box;
+    height: 40px;
+    width: 390px;
+    max-width: 100%;
+    max-height: 100%;
+    border: none;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+    margin-top: 20px;
+    position: relative;
+    top: -10px;
+}
+
+.ciudPostal{
+    box-sizing: content-box;
+    height: 40px;
+    width: 390px;
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.inptCiudad{
+    box-sizing: content-box;
+    height: 40px;
+    width: 70vw;
+    max-width: 100%;
+    max-height: 100%;
+    border: none;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.inptPostal{
+    box-sizing: content-box;
+    height: 40px;
+    width: 30vw;
+    max-width: 100%;
+    max-height: 100%;
+    border: none;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+    margin-top: 20px;
+}
+
+.miniTitulos{
+    position: relative;
+    top: 15px;
+}
+
+.tituloPU {
+    position: relative;
+    top: -10px;
+}
+
+.nacimiento{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.perfilUsuario{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: relative;
+    top: -15px;
+}
+
+.intereses{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: relative;
+    bottom: 25px;
+}
+
+.tituloInt{
+    position: relative;
+    top: -20px;
+}
+
+.inptFoto{
+    position: relative;
+    top: -30px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.tituloFP{
+    position: relative;
+    top: -30px;
+}
+
+.mtG{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
+
+.btnRegister{
+    box-sizing: content-box;
+    height: 40px;
+    width: 390px;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+    border: none;
+    color: #ffffff;
+    font-size: large;
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #1259c3;
+    margin-top: 20px;
+    
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+    max-width: 100%;
+    max-height: 100%;
+    width: 80vw;
+}
+
+.inptLogin{
+    box-sizing: content-box;
+    height: 40px;
+    width: 390px;
+    max-width: 100%;
+    max-height: 100%;
+    border: none;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+}
+
+.btnLogin{
+    box-sizing: content-box;
+    height: 40px;
+    width: 390px;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+    border: none;
+    color: #ffffff;
+    font-size: large;
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #1259c3;
+    
+    
+}
+
+.btnRegister:hover{
+    background-color: #0022AA;
+}
+
+.btnRegister:focus{
+    background-color: #0022AA;
+}
+
+.btnLogin:focus{
+    background-color: #0022AA;
+}
+
+.inptLogin:focus{
+    outline: none;
+    box-shadow: #EAC926 0px 0px 0px 3px;
+}
+
+.btnLogin:hover{
+    background-color: #0022AA;
+}
+
+
+
+@media only screen and (max-width: 825px){
+    .imgLogo{
+        display: block;
+        width: 30vw;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 539px){
+    div.productos{
+        margin-bottom: 20px;
+    }
+
+    section.ultVisita{
+        box-sizing: content-box;
+        display: flex;
+        flex-direction: column!important;
+        justify-content: space-around!important;
+        max-width: 100%;
+        max-height: 100%;
+    }
+    
+    section.ofertas{
+        box-sizing: content-box;
+        display: flex;
+        flex-direction: column!important;
+        align-items: center;
+        justify-content: space-around!important;
+        max-width: 100%;
+        max-height: 100%;
+        
+    }
+
+    input.inptRegister{
+        box-sizing: content-box;
+        height: 40px;
+        width: 73vw;
+        max-width: 100%;
+        max-height: 100%;
+        border: none;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+        margin-top: 20px;
+    }
+
+    div.direccion{
+        box-sizing: content-box;
+        height: 40px;
+        width: 73vw;
+        max-width: 100%;
+        max-height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+
+    div.inptDirecc{
+        box-sizing: content-box;
+        height: 40px;
+        width: 70vw;
+        max-width: 100%;
+        max-height: 100%;
+        border: none;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+        margin-top: 20px;
+        margin-right: 10px;
+    }
+    
+    div.inptNum{
+        box-sizing: content-box;
+        height: 40px;
+        width: 30vw;
+        max-width: 100%;
+        max-height: 100%;
+        border: none;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+        margin-top: 20px;
+    }
+
+    div.ciudPostal{
+        box-sizing: content-box;
+        height: 40px;
+        width: 73vw;
+        max-width: 100%;
+        max-height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    input.inptFecha{
+        box-sizing: content-box;
+        height: 40px;
+        width: 73vw;
+        max-width: 100%;
+        max-height: 100%;
+        border: none;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+        margin-top: 20px;
+        position: relative;
+    }
+
+    div.perfilUsuario{
+        box-sizing: content-box;
+        height: 40px;
+        width: 73vw;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    div.intereses{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    input.inptLogin{
+        box-sizing: content-box;
+        height: 40px;
+        width: 73vw;
+        max-width: 100%;
+        max-height: 100%;
+        border: none;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+        margin-top: 20px;
+    }
+
+    button.btnLogin{
+        box-sizing: content-box;
+        height: 40px;
+        width: 73vw;
+        max-width: 100%;
+        max-height: 100%;
+        border-radius: 10px;
+        border: none;
+        color: #ffffff;
+        font-size: large;
+        font-weight: bold;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        background-color: #1259c3;
+        
+        
+    }
+}
+
+
+

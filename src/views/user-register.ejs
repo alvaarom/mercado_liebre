@@ -1,0 +1,106 @@
+<html>
+
+    <!-- Include Head -->
+<%- include('partials/head', {title: 'Formulario de creación'}) %>
+<body>
+	<!-- Header -->
+	<%- include('partials/headerNavbar') %>
+	<!-- /Header -->
+
+        <main>
+            <div class="banner"></div>
+
+            <section class="contRegister">
+                <form class="registro" action="/users/register" method="POST" enctype="multipart/form-data">
+                    <input class="inptRegister gral" type="text" name="nombre" placeholder="Nombre(*)" minlength="3">
+                    <% if (locals.errors && errors.nombre) { %>
+                        <p class="textErrorForm"><%= errors.nombre.msg %></p>
+                    <% } %>
+                    <input class="inptRegister gral" type="text" name="apellido" placeholder="Apellido(*)">
+                    <% if (locals.errors && errors.apellido) { %>
+                        <p class="textErrorForm"><%= errors.apellido.msg %></p>
+                    <% } %>
+                    <input class="inptRegister gral" type="text" name="usuario" placeholder="Nombre de usuario(*)">
+                    <% if (locals.errors && errors.usuario) { %>
+                        <p class="textErrorForm"><%= errors.usuario.msg %></p>
+                    <% } %>
+                    <input class="inptRegister gral" type="email" name="email" placeholder="E-mail(*)">
+                    <% if (locals.errors && errors.email) { %>
+                        <p class="textErrorForm"><%= errors.email.msg %></p>
+                    <% } %>
+                    <input class="inptRegister gral" type="password" name="contraseña" placeholder="Contraseña(*)" minlength="8">
+                    <% if (locals.errors && errors.contraseña) { %>
+                        <p class="textErrorForm"><%= errors.contraseña.msg %></p>
+                    <% } %>
+                    <input class="inptRegister gral" type="password" name="contraseñart" placeholder="Confirmar contraseña(*)" minlength="8">
+                    <% if (locals.errors && errors.contraseñart) { %>
+                        <p class="textErrorForm"><%= errors.contraseñart.msg %></p>
+                    <% } %>
+                    <div class="direccion">
+                        <input class="inptDirecc gral" type="text" name="direccion" placeholder="Calle">
+                        <input class="inptNum gral" type="text" name="nroCalle" placeholder="Número">
+                    </div>          
+                    <div class="ciudPostal">
+                        <select class="inptCiudad gral" type="text" name="provincia">
+                            <option value="1">Buenos Aires</option>
+                            <option value="2">Capital Federal</option>
+                            <option value="3">Catamarca</option>
+                            <option value="4">Chaco</option>
+                            <option value="5">Chubut</option>
+                            <option value="6">Córdoba</option>
+                            <option value="7">Corrientes</option>
+                            <option value="8">Entre Ríos</option>
+                            <option value="9">Formosa</option>
+                            <option value="10">Jujuy</option>
+                            <option value="11">La Pampa</option>
+                            <option value="12">La Rioja</option>
+                            <option value="13">Mendoza</option>
+                            <option value="14">Misiones</option>
+                            <option value="15">Neuquén</option>
+                            <option value="16">Río Negro</option>
+                            <option value="17">Salta</option>
+                            <option value="18">San Juan</option>
+                            <option value="19">San Luis</option>
+                            <option value="20">Santa Cruz</option>
+                            <option value="21">Santa Fe</option>
+                            <option value="22">Santiago del Estero</option>
+                            <option value="23">Tierra del Fuego</option>
+                            <option value="24">Tucumán</option>
+                        </select>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <p class="tituloInt mtG">Intereses:</p>
+
+                    <div class="intereses">
+                        <input type="checkbox" name="interes" value="Electro">
+                        <label>Electro</label>
+                        <input type="checkbox" name="interes" value="Moda">
+                        <label>Moda</label>
+                        <input type="checkbox" name="interes" value="Hogar">
+                        <label>Hogar</label>
+                        <input type="checkbox" name="interes" value="Juguetería">
+                        <label>Juguetería</label>
+                        <input type="checkbox" name="interes" value="Fitness">
+                        <label>Fitness</label>
+                    </div>
+
+                    <p class="tituloFP mtG">Foto de perfil(*):</p>
+                    <input class="inptFoto" type="file" name="image" value="fotoPerfil">
+                    <% if (locals.errors && errors.image) { %>
+                        <p class="textErrorForm"><%= errors.image.msg %></p>
+                    <% } %>
+                        <button class="btnRegister" type="submit" value="Enviar">Registrarse</button>
+                        <button class="btnRegister" type="reset" value="Enviar">Clear</button>
+                </form>
+
+            </section>
+
+        </main>
+
+        <%- include("./partials/footer") %>
+        <%- include("./partials/scripts") %>
+    </body>
+
+</html>  

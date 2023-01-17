@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- Include Head -->
+<%- include('partials/head', {title: 'Eliminado'}) %>
+<body>
+	<!-- Header -->
+	<%- include('partials/headerNavbar') %>
+	<!-- /Header -->
+
+	<div class="container products-wrapper">
+		<div class="row">
+			<div class="col-12">
+				<h2 class="products-title">Producto eliminado con exito</h2>
+			</div>
+		</div>
+		<div class="col-12">
+
+			<a href="/products" class="action-button edit">REGRESAR A LA TIENDA</a>
+		</div>
+
+	</div>
+	<!-- /todos los productos -->
+
+	<!-- footer -->
+	<%- include('partials/footer') %>
+	<!-- /footer -->
+	<%- include("./partials/scripts") %>
+</body>	
+</html>
